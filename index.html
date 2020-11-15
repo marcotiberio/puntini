@@ -22,7 +22,7 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' id='jquery-js'></script>
 	<script>
 			$(function(){
-			$('#musicHolder').hover(
+			$('.container').hover(
 				function() {    $("audio")[0].play();},
 				function() {    $("audio")[0].pause();}
 				)
@@ -34,14 +34,13 @@
 	<div id="musicHolder">
 		<!-- Make an invisible audio tag (without controls, no autoplay) and preload it -->
 		<audio preload="auto">
-		  <source src="http://www.lucedigitale.com/blog/wp-content/uploads/2013/07/danosongs_001.mp3" type="audio/mpeg" muted>
-		  <source src="http://www.lucedigitale.com/blog/wp-content/uploads/2013/07/danosongs_001.ogg" type="audio/ogg" muted>
+		  <source src="assets/test.mp3" type="audio/mpeg" muted>
+		  <source src="assets/test.ogg" type="audio/ogg" muted>
 		  Your browser does not support this audio format.
 		</audio>
 	</div>
 	<main>
 		<div class="frame"></div>
-		<div id="hoverMe"></div>
 	</main>
 	<div class="container"></div>
 	<script type="text/javascript" src="scripts/index.65cc8f49a5b9f6d56079.js"></script>
